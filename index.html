@@ -7,38 +7,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    
+    <script src="https://kit.fontawesome.com/289bac1066.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+
 </head>
 
 <body>
-    <div id="header">
-        <div class="container">
-            <nav id="navbar">
-                <h2><a href="index.html">KC</a></h2>
-                <ul>
-                    <li><a href="work.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <!-- <li><a href="#">Shop</a></li> -->
-                    
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <div id="name">
-        <div class="container">
-            <p>Art by</p>
-            <h1>Khushbu Choudhary</h1>
-        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <section id="main">
 
-    </div>
-    <div id="footer">
-        <div class="conatiner">
-            <p id="copyright">
-                © 2022 by Narendra Choudhary
-            </p>
+
+        <div id="header">
+            <div class="container">
+                <nav id="navbar">
+                    <h2><a href="index.html">Home</a></h2>
+                    <ul id="sidemenu">
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="about.html">Sketch</a></li>
+                        <li><a href="handicraft.html">Handicraft</a></li>
+                        <!-- <li><a href="#">Shop</a></li> -->
+                        <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </div>
+        <div id="name">
+            <div class="container">
+                <p>Art by</p>
+                <h1>Khushbu Choudhary</h1>
+            </div>
+
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col1">
+                        <img src="aboutpic.jpeg" alt="user picture">
+                    </div>
+                    <div class="about-col2">
+                        <h1 class="subtitle">About</h1>
+                        <!-- content -->
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore inventore temporibus iste
+                            excepturi laudantium praesentium, unde tenetur sapiente voluptatibus fugit aut saepe id
+                            aspernatur molestias. Tenetur magni quas odit doloremque neque repellendus fugiat quod,
+                            blanditiis, voluptatem iusto, quos recusandae? Perspiciatis incidunt doloribus quam aliquam,
+                            nam dolores ducimus. Nobis ducimus voluptates itaque magni dolore recusandae soluta cum
+                            explicabo maiores adipisci ipsa quod hic assumenda illum sint perferendis eligendi, minus
+                            repellat et modi voluptate excepturi minima mollitia. Recusandae sint accusantium quia?
+                            Laborum fuga sequi corrupti labore nesciunt quaerat ut facere aliquam assumenda vel qui
+                            similique, eaque recusandae quos quod consequatur! Laudantium esse tenetur accusamus libero
+                            commodi! Voluptates, asperiores debitis accusantium atque ad eius ab aperiam ea harum
+                            accusamus enim a? Molestias, quidem quibusdam. Voluptates iste voluptate sequi, nostrum
+                            quisquam sapiente placeat quas? Error voluptates quam dolorem! Error labore adipisci sed
+                            vel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="container">
+                <div class="contact">
+                    <h1>Contact</h1>
+                    <div class="main">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="conatiner">
+                <p id="copyright">
+                    © 2022 by Narendra Choudhary
+                </p>
+            </div>
+        </div>
+    </section>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
 
 </html>

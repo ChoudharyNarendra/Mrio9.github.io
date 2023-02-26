@@ -67,6 +67,15 @@ nav ul li a {
     font-size: 18px;
 }
 
+/* main */
+#main {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
 
 /* name */
 #name {
@@ -79,10 +88,11 @@ nav ul li a {
     height: 100vh;
     position: relative;
 }
+
 #name::before {
     content: "";
     position: absolute;
-    background-image: url(background.jpg);
+    /* background-image: url(background.jpg); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -128,10 +138,11 @@ nav ul li a {
     color: #fff;
     position: relative;
 }
+
 #about::before {
     content: "";
     position: absolute;
-    background-image: url(background.jpg);
+    /* background-image: url(background.jpg); */
     background-size: cover;
     background-position: center;
     top: 0px;
@@ -172,10 +183,11 @@ nav ul li a {
     position: relative;
     align-items: center;
 }
+
 #contact::before {
     content: "";
     position: absolute;
-    background-image: url(background.jpg);
+    /* background-image: url(background.jpg); */
     background-size: cover;
     background-position: center;
     top: 0px;
@@ -185,12 +197,13 @@ nav ul li a {
     opacity: 0.3;
 }
 
-#contact h1{
+#contact h1 {
     position: relative;
     text-align: center;
     margin: 20px;
     font-size: 40px;
 }
+
 .main {
     position: relative;
     padding-top: 20px;
@@ -228,9 +241,11 @@ form textarea {
     color: white;
     font-size: 18px;
 }
-form textarea{
+
+form textarea {
     height: 288px;
 }
+
 form btn2 {
     padding: 14px;
     font-size: 18px;
@@ -356,4 +371,72 @@ form btn2 {
 
 .carousel-button.next {
     right: 1rem;
+}
+
+nav .fas {
+    display: none;
+
+}
+
+/* handi */
+#gallery{
+    text-align: center;
+}
+#gallery .gallery-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#gallery .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+#gallery .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06); 
+}
+#gallery .pro img{
+    width: 100%;
+}
+
+  
+@media only screen and (max-width:477px) {
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    #sidemenu {
+        background: red;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+
+    }
 }
